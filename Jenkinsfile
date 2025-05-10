@@ -18,9 +18,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir('/var/lib/jenkins/workspace/Microservice_Deployment/src/adservice/') {
-                        sh "docker build -t tkibnyusuf/adservice:latest ."
-                        sh "docker push tkibnyusuf/adservice:latest"
-                        sh "docker rmi tkibnyusuf/adservice:latest"
+                        sh "docker build -t matolala/adservice:latest ."
+                        sh "docker push matolala/adservice:latest"
+                        sh "docker rmi matolala/adservice:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -32,9 +32,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/cartservice/src/") {
-                        sh "docker build -t tkibnyusuf/cartservice:latest ."
-                        sh "docker push tkibnyusuf/cartservice:latest"
-                        sh "docker rmi tkibnyusuf/cartservice:latest"
+                        sh "docker build -t maolala/cartservice:latest ."
+                        sh "docker push matolala/cartservice:latest"
+                        sh "docker rmi matolala/cartservice:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -46,9 +46,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/checkoutservice/") {
-                        sh "docker build -t tkibnyusuf/checkoutservice:latest ."
-                        sh "docker push tkibnyusuf/checkoutservice:latest"
-                        sh "docker rmi tkibnyusuf/checkoutservice:latest"
+                        sh "docker build -t matolala/checkoutservice:latest ."
+                        sh "docker push matolala/checkoutservice:latest"
+                        sh "docker rmi matolala/checkoutservice:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -60,9 +60,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/currencyservice/") {
-                        sh "docker build -t tkibnyusuf/currencyservice:latest ."
-                        sh "docker push tkibnyusuf/currencyservice:latest"
-                        sh "docker rmi tkibnyusuf/currencyservice:latest"
+                        sh "docker build -t matolala/currencyservice:latest ."
+                        sh "docker push matolala/currencyservice:latest"
+                        sh "docker rmi matolala/currencyservice:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -75,9 +75,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/emailservice/") {
-                        sh "docker build -t tkibnyusuf/emailservice:latest ."
-                        sh "docker push tkibnyusuf/emailservice:latest"
-                        sh "docker rmi tkibnyusuf/emailservice:latest"
+                        sh "docker build -t matolala/emailservice:latest ."
+                        sh "docker push matolala/emailservice:latest"
+                        sh "docker rmi matolala/emailservice:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -89,9 +89,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/frontend/") {
-                        sh "docker build -t tkibnyusuf/frontend:latest ."
-                        sh "docker push tkibnyusuf/frontend:latest"
-                        sh "docker rmi tkibnyusuf/frontend:latest"
+                        sh "docker build -t matolala/frontend:latest ."
+                        sh "docker push matolala/frontend:latest"
+                        sh "docker rmi matolala/frontend:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -103,9 +103,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/loadgenerator/") {
-                        sh "docker build -t tkibnyusuf/loadgenerator:latest ."
-                        sh "docker push tkibnyusuf/loadgenerator:latest"
-                        sh "docker rmi tkibnyusuf/loadgenerator:latest"
+                        sh "docker build -t matolala/loadgenerator:latest ."
+                        sh "docker push matolala/loadgenerator:latest"
+                        sh "docker rmi matolala/loadgenerator:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -117,9 +117,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/paymentservice/") {
-                        sh "docker build -t tkibnyusuf/paymentservice:latest ."
-                        sh "docker push tkibnyusuf/paymentservice:latest"
-                        sh "docker rmi tkibnyusuf/paymentservice:latest"
+                        sh "docker build -t matolala/paymentservice:latest ."
+                        sh "docker push matolala/paymentservice:latest"
+                        sh "docker rmi matolala/paymentservice:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -131,9 +131,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/productcatalogservice/") {
-                        sh "docker build -t tkibnyusuf/productcatalogservice:latest ."
-                        sh "docker push tkibnyusuf/productcatalogservice:latest"
-                        sh "docker rmi tkibnyusuf/productcatalogservice:latest"
+                        sh "docker build -t matolala/productcatalogservice:latest ."
+                        sh "docker push matolala/productcatalogservice:latest"
+                        sh "docker rmi matolala/productcatalogservice:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -145,9 +145,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/recommendationservice/") {
-                        sh "docker build -t tkibnyusuf/recommendationservice:latest ."
-                        sh "docker push tkibnyusuf/recommendationservice:latest"
-                        sh "docker rmi tkibnyusuf/recommendationservice:latest"
+                        sh "docker build -t matolala/recommendationservice:latest ."
+                        sh "docker push matolala/recommendationservice:latest"
+                        sh "docker rmi matolala/recommendationservice:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
@@ -159,9 +159,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/shippingservice/") {
-                        sh "docker build -t tkibnyusuf/shippingservice:latest ."
-                        sh "docker push tkibnyusuf/shippingservice:latest"
-                        sh "docker rmi tkibnyusuf/shippingservice:latest"
+                        sh "docker build -t matolala/shippingservice:latest ."
+                        sh "docker push matolala/shippingservice:latest"
+                        sh "docker rmi matolala/shippingservice:latest"
                         sh 'docker system prune -a -f --volumes'
                     }
                 }
