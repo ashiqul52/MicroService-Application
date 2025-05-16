@@ -32,7 +32,7 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerpass', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/cartservice/src/") {
-                        sh "docker build -t maolala/cartservice:latest ."
+                        sh "docker build -t matolala/cartservice:latest ."
                         sh "docker push matolala/cartservice:latest"
                         sh "docker rmi matolala/cartservice:latest"
                         sh 'docker system prune -a -f --volumes'
