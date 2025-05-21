@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: matolala/adservice:latest
+        image: ashiq52/adservice:latest
         ports:
         - containerPort: 9555
         env:
@@ -97,7 +97,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: matolala/cartservice:latest
+        image: ashiq52/cartservice:latest
         ports:
         - containerPort: 7070
         env:
@@ -162,7 +162,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: matolala/checkoutservice:latest
+          image: ashiq52/checkoutservice:latest
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -237,7 +237,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: matolala/currencyservice:latest
+        image: ashiq52/currencyservice:latest
         ports:
         - name: grpc
           containerPort: 7000
@@ -304,7 +304,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: matolala/emailservice:latest
+        image: ashiq52/emailservice:latest
         ports:
         - containerPort: 8080
         env:
@@ -373,7 +373,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: matolala/frontend:latest
+          image: ashiq52/frontend:latest
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -483,7 +483,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: matolala/loadgenerator:latest
+        image: ashiq52/loadgenerator:latest
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -527,7 +527,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: matolala/paymentservice:latest
+        image: ashiq52/paymentservice:latest
         ports:
         - containerPort: 50051
         env:
@@ -592,7 +592,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: matolala/productcatalogservice:latest
+        image: ashiq52/productcatalogservice:latest
         ports:
         - containerPort: 3550
         env:
@@ -657,7 +657,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: matolala/recommendationservice:latest
+        image: ashiq52/recommendationservice:latest
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -792,7 +792,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: matolala/shippingservice:latest
+        image: ashiq52/shippingservice:latest
         ports:
         - containerPort: 50051
         env:
