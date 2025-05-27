@@ -373,7 +373,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: as/frontend:latest
+          image: ashiq52/frontend
           ports:
           - containerPort: 8080
           readinessProbe:
